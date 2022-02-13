@@ -56,14 +56,14 @@ public static int sumOdd(int start, int end)
 
     int sum = 0;
 
-    if((end< start) || (end < 0) || (start < 0))
+    if((end < start) || (end < 0) || (start < 0))
     {
         return -1;
     }else {
 
 
-
-    for(int i = start; i <= end; i++)
+//using<= was causing a problem in the program, fix it by <
+    for(int i = start; i < end; i++)
     {
 
         if(isOdd(i))
